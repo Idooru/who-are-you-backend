@@ -1,8 +1,6 @@
 import { Module } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
-import { config } from "dotenv";
 import * as process from "process";
-config();
 
 const returnEnviromentPath = () => {
   switch (process.env.NODE_ENV) {
